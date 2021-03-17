@@ -1,0 +1,39 @@
+@import '/src/styling/variables.scss';
+
+.spinner {
+  position: absolute;
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+  left: calc(50% - 50px);
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: $accent;
+
+  border-radius: 100%;
+  display: inline-block;
+  animation: bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  animation-delay: -0.16s;
+}
+
+@keyframes bouncedelay {
+  0%,
+  80%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}

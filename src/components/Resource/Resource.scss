@@ -1,0 +1,26 @@
+.resource {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  & .resource-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .resource-footnotes {
+      // display: flex;
+      // flex-direction: row;
+      // justify-content: space-between;
+    }
+  }
+
+  &-column {
+    display: flex;
+    flex-direction: column;
+
+    & > .media img {
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '/src/styling/variables.scss';
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  background-color: $white;
+  box-shadow: 0px 14px 16px 7px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.resource-of-the-day {
+  min-height: 200px;
+}
+
+@media screen and (max-width: 765px) {
+  .container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,6 @@
+.explanation {
+  & > p {
+    text-align: justify;
+    text-indent: 0.5rem;
+  }
+}
